@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Imagenes/imagenespagprincipal/logotipo.png" />
+  <title>Energia Limpia Para Todos</title>
+  <link rel="stylesheet" href="stylePrincipal.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <div class="contenedor"> <!--Inicio de contenedor general -->
+
+    <div class="contenedorprincipal p-2">
+      <nav class="nav align-items-center">
+        <li class="navbar-brand" style="margin-left: 30px;" href=""><img
+            src="./Imagenes/imagenespagprincipal/logotipo2.png" alt="logotipo" width="170px"></li>
+        <li class="nav-item"><a class="nav-link text-black" href="quienesSomos.html">¿Quienes Somos?</a></li>
+        <!--En href ira la referencia para la pagina en donde se describe quienes somos-->
+        <li class="nav-item"><a class="nav-link text-black" href="galeria.html">Galeria Interactiva</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Energias Verdes</a>
+          <ul class="dropdown-menu" style="background-color: #588157">
+            <li><a class="dropdown-item" href="eSolar.html">Solar</a></li>
+            <!--aparte de lo que va aqui, se coloca el calculo de consumo energetico-->
+            <li><a class="dropdown-item" href="biomasa.html">Biomasa</a></li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://impactotic.co/innovacion/sostenibilidad/energias-renovables-en-colombia-situacion-retos-y-proyectos/"  target="_blank">Otras fuentes...</a></li>
+          </ul>
+        </li>
+      </nav>
+    </div>
+
+
+    <!--INICIO DE CARRUSEL DE IMAGENES-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner"> <!--carrusel de imagenes relacionadas con nuestra pagina web-->
+
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./Imagenes/imagenesgaleria/paisajeverde.jpg" class="d-block w-100" alt="paisaje"
+            style="max-height: 650px;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cuidemos nuestro planeta</h5>
+            <p>y tambien existen mas formas de cuidarlo...</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="10000" style="max-height: 650px;">
+          <video class="d-block w-100 " alt="panel" autoplay loop>
+            <source src="./videos/videocorto.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cuidemos nuestro planeta</h5>
+            <p>existen muchas formas de hacerlo...</p>
+          </div>
+        </div>
+
+        <div class="carousel-item active" data-bs-interval="3000">
+          <!--esta ubicado un intervalo de tiempo de transición-->
+          <img src="./Imagenes/imagenesgaleria/panel_foco_eolica.webp" class="d-block w-100" alt="panel"
+            style="max-height: 650px;"><!-- se le da un maximo alto-->
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Coonoce estas fuentes de energia</h5>
+            <p>y sus impactos en nuestro planeta</p>
+          </div>
+        </div>
+
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> <!--finaliza contenedor de carruseles-->
+
+    <div>
+      <div class="container text-center energias-renovables">
+        <div class="row align-items-center">
+          <div class="col">
+            <h2>¿Qué son las energías renovables?</h2>
+            <p>Las energías renovables son fuentes de energía que se obtienen de recursos naturales que se
+              regeneran de forma continua, como la luz solar, el viento, el agua y la biomasa. Estas
+              fuentes son sostenibles
+              y tienen un menor impacto ambiental en comparación con los combustibles fósiles.</p>
+          </div>
+          <div class="col">
+            <h2>¿Por qué son importantes?</h2>
+            <p>Las energías renovables son cruciales para reducir la dependencia de los combustibles
+              fósiles,
+              disminuir las emisiones de gases de efecto invernadero y mitigar el cambio climático.
+              Además, contribuyen
+              a la seguridad energética y crean empleos en sectores sostenibles.</p>
+          </div>
+          <div class="col">
+            <h2>¿Cómo funcionan?</h2>
+            <p>Las energías renovables funcionan aprovechando los recursos naturales. Por ejemplo, los
+              paneles
+              solares convierten la luz solar en electricidad, las turbinas eólicas generan energía a
+              partir del viento y las
+              plantas hidroeléctricas utilizan el flujo de agua para producir electricidad. Estos procesos
+              son limpios y
+              sostenibles.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Beneficios de las Energías Renovables
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              El uso de energías renovables trae consigo múltiples beneficios que impactan positivamente tanto en el
+              medio ambiente como en la sociedad. En primer lugar, estas energías contribuyen a la reducción de
+              emisiones contaminantes, disminuyendo significativamente la liberación de dióxido de carbono (CO2) y otros
+              gases de efecto invernadero responsables del calentamiento global. Además, al provenir de recursos
+              naturales inagotables como el sol y el viento, garantizan un suministro energético sostenible y seguro a
+              largo plazo, evitando la dependencia de combustibles fósiles importados y sus fluctuaciones de precio.
+              Otro beneficio importante es la mejora en la calidad del aire y la salud pública, ya que reducen la
+              contaminación atmosférica que afecta a millones de personas. Desde el punto de vista económico, las
+              energías renovables fomentan la creación de empleo verde en sectores como la instalación, operación y
+              mantenimiento de plantas, así como en la innovación tecnológica. Finalmente, su implementación contribuye
+              a la diversificación energética, fortaleciendo la resiliencia de los sistemas eléctricos ante eventos
+              extremos.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Desafíos y Aspectos Negativos
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A pesar de las ventajas claras que ofrecen las energías renovables, también existen ciertos desafíos y
+              limitaciones que deben ser abordados para su expansión efectiva. Uno de los principales retos es la
+              intermitencia de algunas fuentes, ya que la producción depende de condiciones climáticas variables, como
+              la presencia del sol o la fuerza del viento, lo que puede generar fluctuaciones en el suministro
+              energético. Esto hace necesaria la inversión en tecnologías de almacenamiento, como baterías o sistemas de
+              hidrógeno, para garantizar el balance entre oferta y demanda. Además, la instalación de infraestructuras
+              renovables puede tener impactos ambientales locales, como la alteración de hábitats, uso de grandes
+              extensiones de terreno, y en algunos casos, afectaciones a la fauna, por ejemplo, aves en parques eólicos.
+              Otro aspecto es el costo inicial elevado para la construcción de plantas y la integración a las redes
+              eléctricas, que aunque ha ido disminuyendo, aún representa una barrera para algunas regiones. Por último,
+              la dependencia geográfica puede limitar el aprovechamiento óptimo de ciertas fuentes renovables en lugares
+              donde las condiciones naturales no son favorables.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Qué se Espera del Futuro?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              El futuro de las energías renovables se vislumbra prometedor gracias a los avances tecnológicos y a un
+              compromiso global cada vez más fuerte con la sostenibilidad. Se espera que las mejoras en tecnologías de
+              almacenamiento, como baterías de alta capacidad y sistemas de hidrógeno verde, permitan superar los
+              problemas de intermitencia y hagan posible un suministro eléctrico constante y confiable. Las redes
+              eléctricas inteligentes (smart grids) jugarán un papel fundamental, facilitando la gestión eficiente y
+              distribuida de la energía, integrando fuentes renovables a gran escala y permitiendo una mayor
+              participación de los usuarios. Los costos de producción y mantenimiento continuarán disminuyendo, haciendo
+              las energías renovables más accesibles y competitivas respecto a los combustibles fósiles. También se
+              prevé la expansión de nuevas fuentes emergentes, como la energía undimotriz (olas) y mareomotriz (mareas),
+              que diversificarán aún más la matriz energética. Finalmente, el impulso de políticas públicas
+              internacionales para alcanzar metas climáticas ambiciosas acelerará la transición hacia un modelo
+              energético más limpio y justo para todos.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Impacto Social y Económico
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              La transición hacia las energías renovables no solo tiene implicaciones ambientales, sino también un
+              profundo impacto social y económico. A nivel global, se está transformando la matriz energética,
+              desplazando progresivamente a los combustibles fósiles y generando nuevas oportunidades económicas en la
+              cadena de valor de las tecnologías limpias. Esto implica la creación de empleos en instalación, operación,
+              mantenimiento e innovación tecnológica, lo que promueve el desarrollo de competencias profesionales
+              especializadas. Además, el acceso a energías renovables contribuye a mejorar la calidad de vida,
+              especialmente en comunidades rurales y remotas que carecen de acceso a redes eléctricas tradicionales, al
+              ofrecerles soluciones sostenibles y descentralizadas. En términos sociales, esta transición fomenta un
+              modelo de desarrollo más equitativo, reduciendo la vulnerabilidad frente a crisis energéticas y
+              promoviendo políticas de inclusión y justicia ambiental. Finalmente, el compromiso de gobiernos y
+              organismos internacionales es clave para fortalecer normativas, incentivos y financiamientos que apoyen
+              esta transformación energética.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Casos de Éxito
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              En el mundo existen numerosos ejemplos de países y proyectos que han logrado avances significativos en la
+              implementación de energías renovables. Países como Alemania, Dinamarca y España han desarrollado modelos
+              exitosos de integración de energías eólicas y solares, alcanzando altos porcentajes de generación limpia
+              en sus matrices energéticas. En América Latina, Chile y Costa Rica son referentes por sus inversiones en
+              hidroeléctrica y energía solar que les permiten abastecer gran parte de su demanda eléctrica con fuentes
+              renovables. Proyectos emblemáticos como el Parque Solar de Noor en Marruecos, una de las plantas solares
+              más grandes del mundo, o el Parque Eólico Gansu en China, ejemplifican la capacidad técnica y financiera
+              para llevar a escala estas tecnologías. Además, la innovación en almacenamiento energético y la
+              digitalización están permitiendo que nuevas iniciativas locales y comunitarias florezcan, democratizando
+              el acceso a energía limpia. Estos casos de éxito demuestran que la transición energética es posible y
+              beneficiosa, inspirando a más regiones a seguir el mismo camino.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!--finaliza carusel de fotos-->
+
+      <!-- Footer -->
+  <footer class="footer">
+
+    <div class="contenedor-footer">
+      <div class="contenido-footer">
+        <h4><b>Contactanos</b></h4>
+        <p>
+          ¿Tienes dudas sobre la energía solar o quieres implementar un proyecto sostenible?<br>
+          Escribenos y recibe ascesoria personalizada. <br>
+          Email: info@eSolar.com <br>
+          Telefono: +57 1234567890 <br>
+        </p>
+
+      </div>
+      <div class="contenido-footer">
+        <h4><b>Ayuda</b></h4>
+        <p>
+          ¿Que es la energia solar? ¿Como funciona? ¿Que beneficios trae para el medio ambiente<br>
+        </p>
+        <a href="https://mail.google.com/" target="_blank"><img src="./img/Iconos/servicio-al-cliente.png" alt="" width="35px"></a>
+      </div>
+      <div class="contenido-footer">
+        <h4><b> Siguenos </b></h4>
+        <p>Encuentranos en nuestras redes</p>
+        <a href="https://www.facebook.com" target="_blank"><img src="./img/Iconos/facebook.png" alt=""
+            width="35px"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./img/Iconos/instagram.png" alt=""
+            width="35px"></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img src="./img/Iconos/whatsapp.png" alt=""
+            width="35px"></a>
+        <a href="https://www.X.com" target="_blank"><img src="./img/Iconos/X.png" alt="" width="35px"></a>
+      </div>
+    </div>
+
+  </footer>
+
+    </div><!--fin de contenedor general-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

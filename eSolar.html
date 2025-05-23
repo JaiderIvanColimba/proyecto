@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energia Limpia Para Todos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleSolar.css">
+</head>
+<body> 
+  <!-- Navbar -->
+  <nav class="nav align-items-center p-2">
+        <li class="navbar-brand" style="margin-left: 30px;" ><a href="principal.html"><img
+            src="./Imagenes/imagenespagprincipal/logotipo2.png" alt="logotipo" width="170px"></a></li>
+        <li class="nav-item"><a class="nav-link text-black" href="quienesSomos.html">¿Quienes Somos?</a></li>
+        <!--En href ira la referencia para la pagina en donde se describe quienes somos-->
+        <li class="nav-item"><a class="nav-link text-black" href="galeria.html">Galeria Interactiva</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Energias Verdes</a>
+          <ul class="dropdown-menu" style="background-color: #588157">
+            <li><a class="dropdown-item" href="eSolar.html">Solar</a></li>
+            <!--aparte de lo que va aqui, se coloca el calculo de consumo energetico-->
+            <li><a class="dropdown-item" href="biomasa.html">Biomasa</a></li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="https://impactotic.co/innovacion/sostenibilidad/energias-renovables-en-colombia-situacion-retos-y-proyectos/"  target="_blank">Otras fuentes...</a></li>
+          </ul>
+        </li>
+      </nav>
+
+  <div class="container"><!--Inicio Contenedor Global-->
+
+    <div class="container position-relative text-center mt-4 mb-5"><!--Inicio Contenedor Descripcion-->
+      <img src="./img/eSolar/fondo3.jfif" class="img-fluid w-100" style="height: 500px; border-radius: 20px;">
+      <div class="position-absolute top-50 start-50 translate-middle text-white p-3 rounded"
+        style="background-color: rgba(40, 122, 58, 0.651);">
+        <h4 class="mt-2">¿Que es la energía Solar?</h4>
+        <br>
+        <p>La energía solar es una fuente de energía renovable que proviene del sol y puede ser aprovechada para generar
+          electricidad o calor. Es una alternativa limpia y sostenible que reduce la dependencia de combustibles fósiles
+          y
+          contribuye al cuidado del medio ambiente.</p>
+      </div>
+    </div><!--Fin Contenedor Descripcion-->
+
+    <div class="container"><!--Inicio Contenedor Ejemplos-->
+      <h4 class="text-center fs-1 fw-bold mt-5 mb-5">Ejemplos de Energia Solar</h4>
+
+      <!--Inicio Card horizontal 1-->
+      <div id="card1" class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!--Inicio carousel card 1-->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/eSolar/eTermoSolar.jfif" class="d-block w-100" alt="..." style="height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eSolar/eTermoSolar2.jpg" class="d-block w-100" alt="..." style="height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eSolar/eTermoSolar3.jfif" class="d-block w-100" alt="..." style="height: 200px;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--Fin carousel card 1-->
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center">Energia Solar Termica</h5>
+              <p class="card-text">Es un tipo de energía que utiliza colectores solares para capturar el calor del sol y
+                transferirlo a un fluido, generalmente agua o aire. Este calor se puede usar directamente para
+                calefacción, agua caliente sanitaria o, a mayores escalas, para generar vapor que mueva turbinas y
+                produzca electricidad. Es como tener un sistema de calefacción alimentado por el sol, ideal para
+                aplicaciones domésticas e industriales.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin Card horizontal 1-->
+
+      <!--Inicio Card horizontal 2-->
+      <div id="card2" class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center">Energia Solar Termocuatica</h5>
+              <p class="card-text">Esta tecnología convierte el calor solar en ondas acústicas (sonoras) dentro de un
+                gas confinado. Estas ondas sonoras generan movimiento que puede ser transformado en electricidad,
+                generalmente sin partes móviles, lo que reduce el desgaste y mantenimiento. Aunque aún en desarrollo,
+                ofrece un enfoque novedoso y prometedor para convertir calor solar en energía eléctrica, especialmente
+                en lugares remotos.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--Inicio carousel card 2-->
+            <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/eSolar/eTermoAcustica.webp" class="d-block w-100" alt="..." style="height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eSolar/eTermoAcustica2.jfif" class="d-block w-100" alt="..." style="height: 200px;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--Fin carousel card 2-->
+          </div>
+        </div>
+      </div>
+      <!--Fin Card horizontal 2-->
+
+      <!--Inicio Card horizontal 3-->
+      <div id="card3" class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <!--Inicio carousel card 3-->
+            <div id="carouselExampleAutoplaying3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/eSolar/eSolarFotovoltaica.jfif" class="d-block w-100" alt="..."
+                    style="height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eSolar/eSolarFotovoltaica2.jfif" class="d-block w-100" alt="..."
+                    style="height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eSolar/eSolarFotovoltaica3.jfif" class="d-block w-100" alt="..."
+                    style="height: 200px;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--Fin carousel card 3-->
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center">Energia Solar Termica</h5>
+              <p class="card-text">Utiliza paneles compuestos por celdas solares que convierten directamente la luz del
+                sol en electricidad gracias al efecto fotovoltaico. Es la forma más común de energía solar y se usa en
+                desde calculadoras hasta grandes plantas solares. Es una tecnología limpia, silenciosa y escalable que
+                convierte los rayos del sol en corriente eléctrica lista para usar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fin Card horizontal 3-->
+
+    </div><!--Fin Contenedor Ejemplos-->
+
+    <div class="container mb-4 text-center"><!--Inicio Contenedor Calculadora-->
+      <h4 class="text-center mt-5">Calculadora Panel</h4>
+      <p>Esta calculadora permite realizar un dimensionamiento en cuanto a cantidad de componentes de un sistema solar
+        fotovoltaico, dependiendo del consumo energetico del usuario y tipo de componentes que desea adquirir.</p>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control" id="consumo" placeholder="KWh por dia">
+        <label for="floatingInput">Consumo Energetico Diario (kW/h)</label>
+      </div>
+
+      <!--Inicio seleccion panel-->
+      <div class="form-floating mb-3">
+        <select class="form-select" id="panel" aria-label="Floating label  select example">
+          <option selected>Seleccione tipo de panel</option>
+          <option value="240">Panel Monocristalino 240 W</option>
+          <option value="500">Panel Monocristalino 500 W</option>
+          <option value="610">Panel Monocristalino 610 W</option>
+        </select>
+        <label for="panel">Tipo de Panel</label>
+      </div>
+      <!--Fin seleccion panel-->
+
+      <!--Inicio seleccion bateria-->
+      <div class="form-floating mb-3">
+        <select class="form-select" id="bateria" aria-label="Floating label  select example">
+          <option selected>Seleccione tipo de bateria</option>
+          <option value="12-100">Bateria 12 V - 100 Ah</option>
+          <option value="12-300">Bateria 12 V - 300 Ah</option>
+          <option value="48-2400">Bateria 48 V - 2.4 KAh</option>
+        </select>
+        <label for="bateria">Tipo de Bateria</label>
+      </div>
+      <!--Fin seleccion bateria-->
+
+      <!--Inicio seleccion controlador-->
+      <div class="form-floating mb-3">
+        <select class="form-select" id="controlador" aria-label="Floating label  select example">
+          <option selected>Seleccione tipo de controlador de carga</option>
+          <option value="1">Controlador de Carga 20A - 12/24 V</option>
+          <option value="2">Controlador de Carga 30A - 12/24/36/48 V</option>
+          <option value="3">Controlador de Carga 60A - 12/24/48 V</option>
+        </select>
+        <label for="controlador">Tipo de Controlador de Carga</label>
+      </div>
+      <!--Fin seleccion controlador-->
+
+      <!--Inicio seleccion Invesor-->
+      <div class="form-floating mb-3">
+        <select class="form-select" id="inversor" aria-label="Floating label  select example">
+          <option selected>Seleccione tipo de inversor de corriente</option>
+          <option value="1">Inversor Cargador 6000 W</option>
+          <option value="2">Inversor Cargador 10000 W</option>
+          <option value="3">Inversor On Grid 10000 W</option>
+        </select>
+        <label for="inversor">Tipo de Inversor de Corriente</label>
+      </div>
+      <!--Fin seleccion Inversor-->
+
+      <button type="button" class="btn btn-success" id="calcular">Calcular</button>
+      <div id="resultado" class="mt-4"></div>
+      <canvas id="grafico" width="400" height="200" class="mt-4"></canvas>
+
+    </div><!--Fin Contenedor Calculadora-->
+
+  </div><!--Fin Contenedor Global-->
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="contenedor-footer">
+      <div class="contenido-footer">
+        <h4><b>Contactanos</b></h4>
+        <p>
+          ¿Tienes dudas sobre la energía solar o quieres implementar un proyecto sostenible?<br>
+          Escribenos y recibe ascesoria personalizada. <br>
+          Email: info@eSolar.com <br>
+          Telefono: +57 1234567890 <br>
+        </p>
+
+      </div>
+      <div class="contenido-footer">
+        <h4><b>Ayuda</b></h4>
+        <p>
+          ¿Que es la energia solar? ¿Como funciona? ¿Que beneficios trae para el medio ambiente<br>
+        </p>
+        <a href="https://mail.google.com/" target="_blank"><img src="./img/Iconos/servicio-al-cliente.png" alt="" width="35px"></a>
+      </div>
+      <div class="contenido-footer">
+        <h4><b> Siguenos </b></h4>
+        <p>Encuentranos en nuestras redes</p>
+        <a href="https://www.facebook.com" target="_blank"><img src="./img/Iconos/facebook.png" alt=""
+            width="35px"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./img/Iconos/instagram.png" alt=""
+            width="35px"></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img src="./img/Iconos/whatsapp.png" alt=""
+            width="35px"></a>
+        <a href="https://www.X.com" target="_blank"><img src="./img/Iconos/X.png" alt="" width="35px"></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="java1.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

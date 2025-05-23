@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Luckiest+Guy&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    background-image: url(./img2/estrellas.jpg);
+}
+
+img, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+
+    position: fixed;
+    top: 50px;
+    right: -20px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    /*
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    margin: -25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:10px;
+    flex-direction: column;
+    width: 250px;         /* tamaño del contenedor */
+    /*margin: 20px auto; 
+    margin-left: -350px;*/
+
+}
+
+nav a {
+    color: #193020;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid rgb(91, 90, 90);
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #4b0082;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav form input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(15, 28, 28);
+    font-weight: 600;
+    font-size: 10px;
+    transition: all 0.3s ease;
+    font-size: 10px;
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    transform: scale(1.2);
+    border: none;
+}
+
+nav form input[type="text"]:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.font {
+    font-family: "Kanit", sans-serif;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 43px;
+    color: #33513c;
+    align-content: center;
+}
+
+.titulo-pag {
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    color: #193020;
+    margin: 100px;
+}
+
+.titulo-pag h5 {
+    font-size: 90px;
+    color: #25372a;
+}
+
+.titulo-pag p {
+    font-size: 22px;
+}
+
+.ener {
+    margin: -2px;
+}
+
+.titulo-pag i {
+    color: #193020;
+}
+
+.titulo-pag a:hover {
+
+    color: #4b0082;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 12px 16px rgb(39, 60, 59);
+    transform: translateY(-3px);
+}
+
+/* Contenedores de cards */
+.contenedor-card, .contenedor-card1, .contenedor-card2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.contenedor-card {
+    width: 100vw;
+    background-image: url(./img2/img5.jpg);
+}
+
+.contenedor-card1 .card,
+.contenedor-card2 .card1 {
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 2px 2px rgb(57, 68, 68);
+}
+
+.contenedor-card2 .card1 {
+    height: 320px;
+}
+
+.contenedor-card1 .card {
+    height: 420px;
+}
+
+.card:hover,
+.card1:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(57, 68, 68);
+}
+
+.card h4, .card1 h4 {
+    font-weight: bold;
+    font-family: "Kanit", sans-serif;
+}
+
+.card p, .card1 p {
+    padding: 5px 1rem 10px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card a, .card1 a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(96, 96, 188);
+}
+
+.card img,
+.card iframe,
+.card1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card1 img {
+    padding-top: 30px;
+}
+
+.contenedor-card2 .card-cuerpo {
+    position: relative;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgb(153, 42, 42);
+    transition: all 0.25s;
+}
+
+/* Contenedor Biomasa */
+.contenedor-biomasa {
+    background-color: rgba(206, 244, 221, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    font-weight: 200;
+}
+
+.contenedor-biomasa p {
+    padding-top: 26px;
+}
+
+.contenedor-biomasa li {
+    margin-bottom: 1.5rem;
+}
+
+/* Otros estilos */
+.parrafo-corrido,
+.lista-corrida {
+    margin-left: 300px;
+}
+
+.color-botton2c button {
+    color: aliceblue;
+    background-color: #1b2f1c;
+    margin-left: 400px;
+}
+
+.left {
+    max-width: 500px;
+    border: 1px solid #000;
+    padding: 20px;
+    float: left;
+}
+
+select {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #88d498;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+#titulo {
+    font-weight: bold;
+}
+
+.dato .serie {
+    width: 70%;
+    margin-right: 15px;
+}
+
+.dato .valor {
+    width: 20%;
+}
+
+.agregar {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #3f8436;
+    border: none;
+    color: rgba(142, 203, 168, 0.8);
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.crear-grafico {
+    float: right;
+    background-color: #5c9584;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #1b2e21;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.right {
+    float: left;
+    border: 1px solid #000;
+    max-width: 605px;
+    margin-left: 15px;
+}
+
+.serie,
+.valor,
+#tipo {
+    background-color: rgba(220, 244, 221, 0.8);
+}
+
+#tipo {
+    font-family: "Fascinate Inline", system-ui;
+}
+
+.ul-titulo {
+    color: #3f7b53;
+    font-family: "Fascinate Inline", system-ui;
+}
+
+/* Tablas */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(200, 255, 200, 0.3);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(56, 142, 60, 0.8);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+tr:hover {
+    background-color: rgba(100, 255, 100, 0.2);
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .titulo-pag {
+        margin: 30px 20px;
+        text-align: center;
+    }
+
+    .titulo-pag h5 {
+        font-size: 40px;
+    }
+
+    .titulo-pag p {
+        font-size: 16px;
+    }
+
+    .contenedor-card,
+    .contenedor-card1,
+    .contenedor-card2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-card1 .card,
+    .contenedor-card2 .card1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .contenedor-biomasa {
+        margin: 0 10px;
+        padding: 1rem;
+    }
+
+    .parrafo-corrido,
+    .lista-corrida,
+    .color-botton2c button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .left,
+    .right {
+        float: none;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+  /* Hacemos que las imágenes sean fluidas y mantengan proporción */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 710px; /* opcional, puedes ajustar o eliminar */
+}
+
+  /* Ajuste de la leyenda para que no quede fuera de pantalla */
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left: 5%;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 200px;
+    z-index: 2;
+}
+
+  /* Navbar dentro de la leyenda, adaptado para móviles */
+.carousel-caption nav.navbar {
+    position: static;
+    margin:10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+}
+
+.carousel-caption nav.navbar a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    background: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+  /* Formulario de búsqueda adaptado */
+.carousel-caption form {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.carousel-caption form input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+  /* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav{
+        position: relative;
+        width: 100%;
+        margin: 20px auto;
+        right: auto;
+        top: auto;
+    }
+
+    .carousel-caption {
+        top: 5%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .carousel-caption .titulo-pag h5 {
+        font-size: 18px;
+    }
+
+    .carousel-caption nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .carousel-caption nav.navbar a {
+        margin: 5px 0;
+    }
+
+
+}
+
+#carouselExampleCaptions{
+    margin-top: -550px;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-item {
+    width: 100vw;
+}
+
+.carousel-item img {
+    width: 100vw;
+    height: 100vh; /* O ajusta a lo que necesites */
+    object-fit: cover;
+    display: block;
+}
